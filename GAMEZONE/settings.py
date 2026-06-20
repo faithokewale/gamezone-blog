@@ -121,13 +121,3 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# Heroku Production Settings
-import dj_database_url
-
-# Allow local development and Heroku's domain to access the app
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.herokuapp.com']
-
-# Connect Django to Heroku's database environment
-
-if os.environ.get('DATABASE_URL'):
-    DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
