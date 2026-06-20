@@ -1,0 +1,1 @@
+web: gunicorn GAMEZONE.wsgi --log-file -
