@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'a-safe-fallback-key-for-local-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gamezone-blog.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
